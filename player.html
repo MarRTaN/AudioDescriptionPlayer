@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<style type="text/css">
+		body{
+			background: #111;
+		}
+		.video-cover{
+			width: 70%;
+			margin-left: -35%;
+			position: absolute;
+			top: 5%;
+			left: 50%;
+		}
+		#vid1{
+			width: 100%;
+		}
+		.audio-controller{
+			background: #eee;
+			width: 43%;
+			position: absolute;
+			left: 50%;
+			margin-left: -21.5%;
+			bottom: 10%;
+			padding: 0.5%;
+			border-radius: 5px;
+		}
+		.audio-controller > label, .audio-controller > input, .audio-controller > button{
+			float: left;
+			margin-left: 10px;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="video-cover">
+			<video id="vid1" src="movie/The Iron Ladies.mp4" controls >
+			  Sorry, your browser doesn't support embedded videos, 
+			  but don't worry, you can <a href="KidTungVidya.mp4">download it</a>
+			  and watch it with your favorite video player!
+			</video>
+		</div>
+		<audio id="aud1"></audio>
+		<div class="audio-controller">
+			<label>audio description : </label> <input id="audio-des" type="file">
+			<button onclick="uploadAudioDescription();">upload</button>
+			<button onclick="setAudioDescription();">play</button>
+			<button onclick="muteAudioDescription();" id="mute">mute</button>
+			<button onclick="unmuteAudioDescription();" id="unmute" style="display:none;">unmute</button>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/player.js"></script>
+</html>

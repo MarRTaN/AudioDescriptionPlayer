@@ -1,0 +1,27 @@
+body{
+	background: #eee;
+}
+
+.number{
+	width:100px;
+	float: left;
+	font-weight: 800;
+}
+
+.number > button{
+	margin-right: 20px;
+}
+
+.file{
+	float: left;
+}
+
+.time{
+	margin-left: 20px;
+	float: left;
+	margin-right: 20px;
+}
+
+.time-input{
+	width: 50px;
+}

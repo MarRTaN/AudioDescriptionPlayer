@@ -1,0 +1,38 @@
+<html>
+<head>
+	<title> Editor </title>
+	<link href="style/main.css" rel="stylesheet" />
+</head>
+<body>
+	<h1> Sound Editor </h1>
+	<div id="list">
+		<div id="list-1" class="list">
+			<div class="number" id="number-1">
+				<button onclick="deleteList(1)">delete</button>1
+			</div>
+			<div class="file">
+				<label>File : </label>
+				<input id="file-1" type="file">
+			</div>
+			<div class="time">
+				<label> Start time : </label>
+				<input type="number" min="0" class="time-input time-input-h" id="h-1" maxlength="2" value="0">:
+				<input type="number" min="0" class="time-input time-input-m" id="m-1" maxlength="2" value="0">:
+				<input type="number" min="0" class="time-input time-input-s" id="s-1" maxlength="2" value="0">
+			</div>
+			<div class="time">
+				<label> End time : </label>
+				<input type="number" min="0" class="time-input time-input-h" id="end-h-1" maxlength="2" value="0">:
+				<input type="number" min="0" class="time-input time-input-m" id="end-m-1" maxlength="2" value="0">:
+				<input type="number" min="0" class="time-input time-input-s" id="end-s-1" maxlength="2" value="0">
+			</div>
+			<br><br>
+		</div>
+	</div>
+	<a href="#add-btn"> <button id="add-btn" onclick="addList();">add more</button> </a>
+	<button onclick="exportToText();">export</button>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/FileSaver.min.js"></script>
+<script type="text/javascript" src="js/editor.js"></script>
+</html>
